@@ -13,8 +13,6 @@
  * Explanation: Because the path 1→3→1→1→1 minimizes the sum.
  */
 
-import java.text.MessageFormat;
-import java.util.ArrayList;
 import java.util.Arrays;
 
 public class MySolution {
@@ -60,30 +58,3 @@ public class MySolution {
         return grid[grid.length - 1][grid[0].length - 1];
     }
 }
-        // int sum = grid[0][0];
-        // ArrayList<Integer> path = new ArrayList<Integer>();
-        // path.add(sum);
-
-        // while(m < grid.length - 1 || n < grid[0].length - 1){
-            //     System.out.println(MessageFormat.format("m: {0}; n: {1}", m, n));
-        //     if(m < grid.length - 1 && n < grid[0].length - 1){
-//         if(grid[m+1][n] < grid[m][n+1]){
-//             sum += grid[m+1][n];
-//             path.add(grid[m+1][n]);
-//             m++;
-//         }else{ //TODO: what if they are equal?
-    //             sum += grid[m][n+1];
-    //             path.add(grid[m][n+1]);
-    //             n++;
-    //         }
-    //     }else if(m < grid.length - 1){
-        //         sum += grid[m+1][n];
-        //         path.add(grid[m+1][n]);
-        //         m++;
-        //     }else if(n < grid[0].length - 1){
-        //         sum += grid[m][n+1];
-        //         path.add(grid[m][n+1]);
-        //         n++;
-        //     }
-        // }
-        // System.out.println(path.toString());
